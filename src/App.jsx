@@ -29,7 +29,7 @@ function App() {
     <main>
       <Slider>
         {images.map(({ url, title }, index) => (
-          <img key={index} src={url} alt={title} />
+          <img key={index} src={url} alt={title} crossOrigin="anonymous" />
         ))}
       </Slider>
     </main>
